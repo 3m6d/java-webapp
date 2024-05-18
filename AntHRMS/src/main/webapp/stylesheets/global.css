@@ -1,0 +1,207 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-noto-sans: "Noto Sans";
+  
+    /* font sizes */
+    --font-size-smi: 13px;
+    --font-size-sm: 14px;
+    --font-size-mid: 17px;
+    --font-size-xs: 12px;
+    --font-size-base: 16px;
+    --font-size-2xl: 21px;
+  
+    /* Colors */
+    --color-darkslateblue-100: #233b90;
+    --color-white: #fff;
+    --color-gray-100: #777;
+    --color-gray-200: #0d1117;
+    --color-gray-300: rgba(255, 255, 255, 0.5);
+    --color-limegreen-100: #58cc02;
+    --color-darkslategray: #3c3c3c;
+    --color-gainsboro: #e5e5e5;
+  
+    /* Gaps */
+    --gap-xl: 20px;
+    --gap-3xs-5: 9.5px;
+    --gap-5xl: 24px;
+    --gap-lgi: 19px;
+    --gap-4xs-5: 8.5px;
+    --gap-24xl: 43px;
+    --gap-2xl: 21px;
+    --gap-base: 16px;
+    --gap-base-9: 16.9px;
+    --gap-7xs-1: 5.1px;
+    --gap-base-5: 15.5px;
+    --gap-3xl: 22px;
+  
+    /* Paddings */
+    --padding-51xl: 70px;
+    --padding-xl: 20px;
+    --padding-121xl: 140px;
+    --padding-12xs: 1px;
+    --padding-10xs-2: 2.2px;
+    --padding-11xs-5: 1.5px;
+    --padding-20xl: 39px;
+    --padding-16xl: 35px;
+    --padding-2xl: 21px;
+    --padding-10xs: 3px;
+    --padding-5xs: 8px;
+    --padding-9xs: 4px;
+    --padding-90xl: 109px;
+    --padding-9xs-5: 3.5px;
+    --padding-8xs-5: 4.5px;
+    --padding-58xl: 77px;
+    --padding-8xs: 5px;
+  
+    /* Border radiuses */
+    --br-base: 16px;
+  }
+  
+/* Global Styles */
+.div {
+  width: 360px;
+  height: 360px;
+  display: none;
+  max-width: 100%;
+  z-index: 1;
+}
+.div, .home, .icon, .icon1, .icon2, .icon3 {
+  position: relative;
+}
+.home, .about-us, .features, .pricing, .get-started1, .try-now, .learn-more-about, .condition-splitter {
+  display: inline-block;
+  line-height: 24px;
+  min-width: 50px; /* Adjusted to cover all with minimum width */
+}
+.icon, .icon1, .icon2, .icon3 {
+  width: 16px;
+  height: 16px;
+}
+.button, .button1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: var(--br-base);
+}
+.button:hover, .button1:hover {
+  background-color: #3db300;
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --body-large-medium: Inter;
+  --font-abel: Abel;
+  --font-noto-sans: "Noto Sans";
+  --body-medium-semibold: Manrope;
+
+  /* font sizes */
+  --body-large-medium-size: 16px;
+  --font-size-xl: 20px;
+  --font-size-13xl: 32px;
+  --font-size-lgi: 19px;
+  --font-size-7xl: 26px;
+  --font-size-smi: 13px;
+  --body-small-regular-size: 14px;
+  --font-size-mid: 17px;
+  --body-smaller-medium-size: 12px;
+  --font-size-2xl: 21px;
+  --heading-h4-size: 24px;
+
+  /* Colors */
+  --color-darkslateblue-100: #233b90;
+  --color-darkslateblue-200: #042c60;
+  --foundation-main-color-main-color-500: #0caf60;
+  --foundation-main-color-main-color-600: #0b9f57;
+  --netral-white: #fff;
+  --neutral-background: #fafafa;
+  --color-gray-100: #808080;
+  --color-gray-200: #777;
+  --foundation-grey-grey-900: #21252b;
+  --color-gray-300: #0d1117;
+  --color-gray-400: rgba(255, 255, 255, 0.5);
+  --color-gray-500: rgba(255, 255, 255, 0.3);
+  --color-limegreen-100: #58cc02;
+  --color-darkslategray: #3c3c3c;
+  --color-gainsboro: #e5e5e5;
+  --foundation-grey-grey-500: #657081;
+  --greyscale-300: #e9eaec;
+  --foundation-grey-grey-300: #989fab;
+  --alerts-error-base: #e03137;
+  --foundation-main-color-main-color-50: #e7f7ef;
+
+  /* Gaps */
+  --gap-lg: 18px;
+  --gap-6xl: 25px;
+  --gap-5xl-8: 24.8px;
+  --gap-xl: 20px;
+  --gap-3xs-5: 9.5px;
+  --gap-5xl: 24px;
+  --gap-lgi: 19px;
+  --gap-4xs-5: 8.5px;
+  --gap-xs: 12px;
+  --gap-24xl: 43px;
+  --gap-2xl: 21px;
+  --gap-9xs: 4px;
+  --gap-base: 16px;
+  --gap-base-9: 16.9px;
+  --gap-7xs-1: 5.1px;
+  --gap-base-5: 15.5px;
+  --gap-3xl: 22px;
+  --gap-3xs: 10px;
+
+  /* Paddings */
+  --padding-22xl: 41px;
+  --padding-221xl: 240px;
+  --padding-xl: 20px;
+  --padding-101xl: 120px;
+  --padding-5xl: 24px;
+  --padding-base: 16px;
+  --padding-6xl: 25px;
+  --padding-3xs: 10px;
+  --padding-8xl-9: 27.9px;
+  --padding-8xl: 27px;
+  --padding-9xs: 4px;
+  --padding-51xl: 70px;
+  --padding-121xl: 140px;
+  --padding-12xs: 1px;
+  --padding-11xs: 2px;
+  --padding-10xs-2: 2.2px;
+  --padding-11xs-5: 1.5px;
+  --padding-20xl: 39px;
+  --padding-16xl: 35px;
+  --padding-2xl: 21px;
+  --padding-10xs: 3px;
+  --padding-5xs: 8px;
+  --padding-90xl: 109px;
+  --padding-9xs-5: 3.5px;
+  --padding-8xs-5: 4.5px;
+  --padding-58xl: 77px;
+  --padding-4xs: 9px;
+  --padding-8xs: 5px;
+  --padding-xs: 12px;
+
+  /* Border radiuses */
+  --br-xs: 12px;
+  --br-9xs: 4px;
+  --br-base: 16px;
+  --br-7xs: 6px;
+  --br-5xs: 8px;
+  --br-3xs: 10px;
+  --br-81xl: 100px;
+}
+
+
+  
+  

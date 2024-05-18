@@ -1,0 +1,125 @@
+@charset "ISO-8859-1";
+
+/* General Resets and Box-Sizing */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    background-image: url('/AntHRMS/resources/others/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; /* Maintains layout structure */
+}
+
+/* Header and Navigation Styles */
+.header, .navigation {
+    width: 100%;
+    position: fixed; /* Adjust based on requirement */
+    top: 0;
+    z-index: 1000; /* Ensures the header is above other content */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 80px; /* Adjusted to account for header */;
+    height: 100%;
+    width: 250px;
+    background-color: #05103a;
+    shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 40px;
+    color: white;
+}
+
+.sidebar .admin-info img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.sidebar .search-box input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sidebar .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .nav-links li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav-links li a:hover {
+    background-color: #0000a0;
+}
+
+/* Content Area Styles */
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 270px; /* Adjusted to account for sidebar */
+    margin-top: 60px; /* Gives space for the header */
+}
+
+.content .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Table and Button Styles */
+table, th, td {
+	margin: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 10px;
+        
+}
+
+th {
+	background-color: #fff;
+    color: #05103a;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.add-btn, .edit-btn, .delete-btn {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+}
